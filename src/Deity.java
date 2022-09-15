@@ -16,6 +16,7 @@ public class Deity {
     public Deity(String name, String description) {
         this.name = name;
         this.description = description;
+        this.parents = new LinkedList<>();
     }
 
     public String getName() {

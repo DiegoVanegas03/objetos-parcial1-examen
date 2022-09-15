@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         // Crear cultura proporcionando nombre y descripción
-        Culture greek = new Culture("Griega", "Mitologia Griega" ,"Deidad principal Zeus");
-        Culture nordic = new Culture("Nórdica", "Mitología nórdica", "Deidad principal Odín");
+        Culture greek = new Culture("Griega", "Mitologia Griega. Deidad principal Zeus");
+        Culture nordic = new Culture("Nórdica", "Mitología nórdica. Deidad principal Odín");
 
         greek.addRelatedCountry("Grecia"); //añadir país influenciado
 

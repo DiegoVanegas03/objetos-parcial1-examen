@@ -3,7 +3,6 @@ import java.util.List;
 import java.util.PrimitiveIterator;
 
 public class Culture {
-    private String cultura;
     private String name;
     private String description;
     private LinkedList<String> countries;
@@ -18,20 +17,13 @@ public class Culture {
     }
 
 
-    public Culture(String cultura, String nombre, String descripcion) {
-        this.cultura = cultura;
+    public Culture( String nombre, String descripcion) {
         this.name = nombre;
         this.description = descripcion;
+        this.countries = new LinkedList<>();
+        this.deities = new LinkedList<>();
     }
 
-
-    public String getCultura() {
-        return cultura;
-    }
-
-    public void setCultura(String cultura) {
-        this.cultura = cultura;
-    }
 
     public String getName() {
         return name;
@@ -53,7 +45,7 @@ public class Culture {
         return countries;
     }
 
-    public void addRelatedCountry(String paisInflienciado) {
-        this.countries.add(paisInflienciado);
+    public void addRelatedCountry(String pais) {
+        countries.add(pais);
     }
 }
